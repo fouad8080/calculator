@@ -1,0 +1,35 @@
+#calculator_body{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:300px;
+	height:450px;
+	transform:translate(-50%,-50%);
+	background-color:black;
+	border:0px solid black;
+	border-radius:10px
+	}
+#screen{
+	width:280px;
+	height:60px;
+	position:absolute;
+	top:4%;
+	left:10px;
+	background-color:#BFC8A8
+	}
+#button_body{
+	padding-left:10px;
+	position:absolute;
+	top:20%;
+	display:grid;
+	grid-template-columns:70px 70px 70px 70px ;
+	
+	}
+.button{
+	width:70px;
+	height:70px;
+	font-size:40px;
+	border:1px solid black;
+	background-color:grey;
+	
+	}
