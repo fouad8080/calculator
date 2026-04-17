@@ -7,32 +7,32 @@
 <title>calculator</title>
 <meta name="generator" content="Geany 2.0" />
 <link rel="stylesheet" href="calculator.css">
-<script src="calculator.js"></script>
+
 </head>
 
 <body>
-	
 	<div id="calculator_body">
-		<div id="screen"></div>
+		<input id="screen" type="text" readonly></input>
 		<div id="button_body">
-			<button class="button">C</button>
-			<button class="button">1</button>
-			<button class="button">2</button>
-			<button class="button">3</button>
-			<button class="button">+</button>
-			<button class="button">4</button>
-			<button class="button">5</button>
-			<button class="button">6</button>
-			<button class="button">-</button>
-			<button class="button">7</button>
-			<button class="button">8</button>
-			<button class="button">9</button>
-			<button class="button">x</button>
-			<button class="button">0</button>
-			<button class="button">.</button>
-			<button class="button">=</button>
-			<button class="button">/</button>
+			<button class="button operation" onclick="clearscreen()">C</button>
+			<button class="button" onclick="writeinscreen('1')">1</button>
+			<button class="button" onclick="writeinscreen('2')">2</button>
+			<button class="button" onclick="writeinscreen('3')">3</button>
+			<button class="button operation" onclick="writeinscreen('+')">+</button>
+			<button class="button" onclick="writeinscreen('4')">4</button>
+			<button class="button" onclick="writeinscreen('5')">5</button>
+			<button class="button" onclick="writeinscreen('6')">6</button>
+			<button class="button operation" onclick="writeinscreen('-')">-</button>
+			<button class="button" onclick="writeinscreen('7')">7</button>
+			<button class="button" onclick="writeinscreen('8')">8</button>
+			<button class="button" onclick="writeinscreen('9')">9</button>
+			<button class="button operation" onclick="writeinscreen('*')">x</button>
+			<button class="button" onclick="writeinscreen('0')">0</button>
+			<button class="button" onclick="writeinscreen('.')">.</button>
+			<button class="button operation" onclick="calcule()">=</button>
+			<button class="button operation" onclick="writeinscreen('/')">/</button>
 		</div>
+		<script src="calculator.js"></script>
 </body>
 
 </html>
